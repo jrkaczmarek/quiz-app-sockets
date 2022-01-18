@@ -7,3 +7,11 @@ Authors:
 Jakub Kaczmarek
 
 Andrzej Kapczynski
+
+# screenshots
+
+![](/screenshots/creating.png)
+![](/screenshots/code.png)
+![](/screenshots/joining.png)
+![](/screenshots/lobby.png)
+![](/screenshots/question.png)
