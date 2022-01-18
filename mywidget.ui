@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyWidget</class>
+ <widget class="QWidget" name="MyWidget">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>791</width>
+    <height>312</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QuizApp</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <item row="0" column="1">
+    <widget class="QGroupBox" name="talkGroup">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0" colspan="2">
+       <widget class="QTextEdit" name="msgsTextEdit">
+        <property name="accessibleName">
+         <string/>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>3</number>
+     </property>
+     <widget class="QWidget" name="startPage">
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="connectGroup">
+         <property name="accessibleDescription">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLineEdit" name="hostLineEdit">
+            <property name="text">
+             <string>localhost</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="portSpinBox">
+            <property name="buttonSymbols">
+             <enum>QAbstractSpinBox::PlusMinus</enum>
+            </property>
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>65535</number>
+            </property>
+            <property name="value">
+             <number>2000</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="conectBtn">
+            <property name="text">
+             <string>Connect</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QGroupBox" name="nickGroup">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLineEdit" name="nickLineEdit"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="nickBtn">
+            <property name="text">
+             <string>Set nick</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QGroupBox" name="typePlayerGroup">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QLineEdit" name="joinqLineEdit"/>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="joinqBtn">
+            <property name="text">
+             <string>Join quiz</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="2">
+           <widget class="QPushButton" name="creatqBtn">
+            <property name="text">
+             <string>Create quiz</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="createPage">
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>d</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1" colspan="3">
+        <widget class="QSpinBox" name="timeSpinBox">
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>600</number>
+         </property>
+         <property name="value">
+          <number>20</number>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1" colspan="3">
+        <widget class="QLineEdit" name="answerD">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="3">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>How many answers (2-4)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1" colspan="3">
+        <widget class="QLineEdit" name="answerA">
+         <property name="accessibleName">
+          <string/>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" colspan="3">
+        <widget class="QLineEdit" name="QuestionlineEdit"/>
+       </item>
+       <item row="4" column="4">
+        <widget class="QRadioButton" name="answerCradioButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0" colspan="2">
+        <widget class="QPushButton" name="addQpushBtn">
+         <property name="text">
+          <string>Add next question</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>c</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>a</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1" colspan="3">
+        <widget class="QLineEdit" name="answerC">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1" colspan="3">
+        <widget class="QLineEdit" name="answerB"/>
+       </item>
+       <item row="2" column="4">
+        <widget class="QRadioButton" name="answerAradioButton">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Time [s]</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>b</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Question</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="4">
+        <widget class="QRadioButton" name="answerDradioButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="4">
+        <widget class="QRadioButton" name="answerBradioButton">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QSpinBox" name="answersSpinBox">
+         <property name="minimum">
+          <number>2</number>
+         </property>
+         <property name="maximum">
+          <number>4</number>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="2" colspan="2">
+        <widget class="QPushButton" name="finishPushBtn">
+         <property name="text">
+          <string>This is my last question</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="joinPage">
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>Waiting for owner to start the game...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>Players in lobby:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QListWidget" name="playersListWidget"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="startGameBtn">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Start the game</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="gamePage">
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="4" column="0" colspan="11">
+        <widget class="QPushButton" name="loadNextQBtn">
+         <property name="text">
+          <string>Next question</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QRadioButton" name="finalBBtn">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>A.</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QRadioButton" name="finalCBtn">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="6">
+        <widget class="QListWidget" name="rankingListWidget"/>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>B.</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>C.</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QRadioButton" name="finalABtn">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="6">
+        <widget class="QLabel" name="label_13">
+         <property name="text">
+          <string>D.</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="11">
+        <widget class="QPushButton" name="sndAnsBtn">
+         <property name="text">
+          <string>Send answer</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="11">
+        <widget class="QTextEdit" name="QandAtextEdit"/>
+       </item>
+       <item row="3" column="6" colspan="5">
+        <widget class="QTextEdit" name="infoTextEdit"/>
+       </item>
+       <item row="1" column="10">
+        <widget class="QPushButton" name="endGameBtn">
+         <property name="text">
+          <string>End game</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="7">
+        <widget class="QRadioButton" name="finalDBtn">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="8" colspan="2">
+        <widget class="QLabel" name="timeLabel">
+         <property name="text">
+          <string>time</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>portSpinBox</tabstop>
+  <tabstop>hostLineEdit</tabstop>
+  <tabstop>conectBtn</tabstop>
+  <tabstop>msgsTextEdit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
