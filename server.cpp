@@ -561,10 +561,10 @@ int main(int argc, char ** argv){
     setReuseAddr(servFd);
 
     sockaddr_in serverAddr;
+    memset(&serverAddr, 0, sizeof(serverAddr));
     serverAddr.sin_family = AF_INET;
     serverAddr.sin_port = htons((short)port);
     serverAddr.sin_addr = {htonl(INADDR_ANY)};
-    memset(&serverAddr.sin_zero, 0, sizeof(serverAddr.sin_zero)); // zerowanie sin_zero
 
     if(bind(servFd, (sockaddr*) &serverAddr, sizeof(serverAddr)))
         error(1, errno, "bind failed");
