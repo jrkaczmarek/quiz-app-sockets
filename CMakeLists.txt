@@ -11,8 +11,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 
-set(GCC_COVERAGE_COMPILE_FLAGS "-Wall -Wextra")
-SET(CMAKE_CXX_FLAGS  "${GCC_COVERAGE_COMPILE_FLAGS}")
+add_compile_options(-Wall -Wextra)
 
 find_package(either_qt6_or_qt5 NAMES Qt6 Qt5 COMPONENTS Widgets Network REQUIRED)
 set(QtX Qt${either_qt6_or_qt5_VERSION_MAJOR})
